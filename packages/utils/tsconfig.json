@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "module": "Node16",
+    "baseUrl": ".",
+    // Use @core/ to import core will cause the type become any
+    // TODO: Re-use @core when typescript fix this problem
+    // "paths": {
+    //   "@core/*": ["../core/src/*"],
+    // }
+  },
+}

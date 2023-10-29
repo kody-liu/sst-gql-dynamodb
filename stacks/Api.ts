@@ -1,11 +1,12 @@
 import { use, StackContext, Api as ApiGateway } from "sst/constructs";
 import { Database } from "./Database.js";
+import { Secrets } from "./Secrets.js";
 
 export function Api({ stack }: StackContext) {
   const api = new ApiGateway(stack, "api", {
     defaults: {
       function: {
-        bind: [use(Database)],
+        bind: [use(Database), ...use(Secrets)],
       },
     },
     routes: {
