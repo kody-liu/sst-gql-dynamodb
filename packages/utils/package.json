@@ -1,0 +1,24 @@
+{
+  "name": "@quizzy-match/utils",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@aws-sdk/smithy-client": "3.358.0",
+    "@aws-sdk/types": "3.357.0",
+    "@types/aws-lambda": "^8.10.125",
+    "@types/node": "20.3.1",
+    "vitest": "0.34.6"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.359.0",
+    "@types/sinon": "10.0.19",
+    "electrodb": "2.6.1",
+    "moment-timezone": "0.5.43",
+    "mongodb": "6.0.0",
+    "sinon": "16.1.0",
+    "sst": "^2.32.2"
+  }
+}
