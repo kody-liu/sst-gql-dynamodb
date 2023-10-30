@@ -1,4 +1,5 @@
 import { builder } from "../builder";
+import { uri } from '../../../../utils/src/mongodb'
 
 type Mongo = {
   url: string
@@ -15,7 +16,7 @@ builder.queryFields((t) => ({
   mongo: t.field({
     type: MongoType,
     resolve: async (_, args) => {
-      return { url: 'mongomongo!' };
+      return { url: uri };
     },
   }),
 }));
