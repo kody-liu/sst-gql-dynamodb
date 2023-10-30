@@ -2,6 +2,7 @@ import { SSTConfig } from "sst";
 import { Api } from "./stacks/Api";
 import { Web } from "./stacks/Web";
 import { Database } from "./stacks/Database";
+import { Secrets } from "./stacks/Secrets";
 
 export default {
   config(_input) {
@@ -12,6 +13,7 @@ export default {
   },
   stacks(app) {
     app
+      .stack(Secrets)
       .stack(Database)
       .stack(Api)
       .stack(Web);
