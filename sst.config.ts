@@ -7,7 +7,7 @@ export default {
   config(_input) {
     return {
       name: "sst-gql-dynamodb",
-      region: "us-east-1",
+      region: "ap-northeast-1",
     };
   },
   stacks(app) {
