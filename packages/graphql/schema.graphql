@@ -4,6 +4,10 @@ type Article {
   url: String!
 }
 
+type Mongo {
+  url: String!
+}
+
 type Mutation {
   createArticle(title: String!, url: String!): Article!
 }
@@ -11,4 +15,5 @@ type Mutation {
 type Query {
   article(articleID: String!): Article!
   articles: [Article!]!
+  mongo: Mongo!
 }
